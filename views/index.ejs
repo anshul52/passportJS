@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p></p>
+  <h2>Create account </h2>
+  <form action="/register" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="number" name="age" placeholder="age">
+    <input type="submit">
+  </form>
+  <h2>Login (if already have an account)</h2>
+  <form action="/login" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit">
+  </form>
+</body>
+
+</html>
